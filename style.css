@@ -1,0 +1,247 @@
+.header-btn {
+    display: block;
+    border: 1px solid black;
+    width: 25px;
+    height: 20px;
+    text-align: center;
+    line-height: 14px;
+    vertical-align: middle;
+    float: right;
+    cursor: pointer;
+    margin-left: -1px;
+    font-weight: bold;
+    background-color: rgba(0, 175, 234, 0.1);
+}
+
+.collapse-btn:hover,
+.deploy-btn:hover {
+    background-color:rgb(0, 175, 234);
+    box-shadow: 0px 0px 10px 0px rgb(0, 175, 234);
+    opacity: 1;
+}
+
+.collapse-btn{
+    border-bottom-left-radius: 5px;
+}
+
+.close-btn{
+    width: 40px;
+    background-color: #F53C3C;
+    border-bottom-right-radius: 5px;
+}
+.close-btn:hover{
+    background-color: #F53C3C;
+    box-shadow: 0px 0px 10px 0px #F53C3C;
+    opacity: 1;
+}
+
+.header-top{
+    padding-bottom: 10px;
+    width: 100%;
+    padding-right:2px; 
+}
+
+.header-middle{
+    width: 100%;
+    padding-right:2px; 
+}
+
+.header-middle,
+.header-top{
+    background: rgba(30,144,255,0.5);
+}
+
+
+input[type=text],
+input[type=search]{
+    border:1px solid black;
+    border-radius: 3px;
+    background:#fff; 
+    display:inline-block; 
+    box-sizing: border-box;
+    background:rgba(232, 242, 252, 0.6);
+    height: 23px;
+    margin: 0;
+}
+
+.filepath-group{
+    position: relative;
+    display: inline-block;
+    float: right;
+    width: 79%;
+    margin-right:5px; 
+}
+
+.filepath-group .folder-img{
+    position: absolute;
+    top: 3px; 
+    left: 3px;
+}
+
+.right-image{
+     position: absolute;
+     top: 2px; 
+     right: 2px;
+     width: 20px;
+}
+
+.filepath-group .refresh-img{
+    border-left: 1px solid black; 
+}
+
+.search-group{
+    position: relative;
+    display: inline-block;
+    float: right;
+    width: 15%;
+}
+
+.filepath{
+    padding: 0px 20px;
+    width: 100%;
+}
+
+.search{
+    width: 100%;
+    padding-right:17px 
+}
+
+.paginator{
+    display: inline-block;
+}
+
+.paginator input{
+    color: white;
+    font-weight: bold;
+    border-radius: 100%;
+    background-color: lightblue;
+}
+
+.header-bottom{
+    background: rgba(176,224,230, 0.5);
+    padding: 5px 0px;
+    border-bottom: 2px solid lightgray;
+}
+
+.menu-option{
+    list-style: none;
+    margin: 0;
+}
+
+.menu-option > li{
+    display: inline-block;
+    position: relative;
+    margin-right:20px; 
+    font-size: 12;
+    padding: 3px 15px;
+    color: rgb(25,25,112);
+}
+
+.menu-option > li:hover{
+    border: 1px solid rgb(176,224,230);
+    border-radius: 3px;
+    background: rgb(240,248,255);
+    margin: -1px;
+    margin-right:19px; 
+}
+
+.menu-option .sub-menu{
+    z-index: 10;
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: lightgray;
+    color: black;
+}
+
+.menu-option > li:hover .sub-menu{
+    display: block;
+}
+
+.menu-option .sub-menu li:hover{
+    border: 1px solid gray;
+    margin: -1px;
+    border-radius: 3px;
+}
+
+.left-nav-bar{
+    float: left;
+    width: 190px;
+    height: 100%;
+    border-right: 1px solid rgb(176,224,230); 
+}
+
+.left-nav-bar li{
+    position: relative;
+}
+
+.left-nav-bar img{
+    position: absolute;
+    width: 18px;
+    vertical-align: middle;
+}
+
+.left-nav-bar span{
+    padding-left:22px; 
+}
+
+.left-nav-bar .active{
+    border: 1px solid rgb(30,144,255);
+    background: rgba(30,144,255,0.5);
+    margin: 1px;
+    border-radius: 3px;
+}
+
+.left-nav-bar .menu  .active:hover{
+    border: 1px solid rgb(30,144,255);
+    background: rgba(30,144,255,0.5);
+    margin: 1px;
+    border-radius: 3px;
+}
+
+.left-nav-bar .menu li{
+    list-style: none;
+    font-size: 12;
+    width: 100%;
+}
+
+.left-nav-bar .menu li{
+    padding-left: 10px;
+}
+
+.left-nav-bar .menu li li{
+    padding-left: 20px;
+}
+
+.left-nav-bar .menu > li > div:hover{
+    border: 1px solid rgb(176,224,230);
+    margin: -1px;
+    border-radius: 3px;
+}
+
+.left-nav-bar .menu li li:hover{
+    border: 1px solid rgb(176,224,230);
+    margin: -1px;
+    border-radius: 3px;
+}
+
+.left-nav-bar ul{
+    padding-left: 0px;
+}
+
+
+.left-nav-bar .menu .sub-menu:last-of-type{
+    margin-bottom: 20px;
+}
+
+
+.clear-fix{
+    content: "";
+    display: table;
+    clear: both;
+}
