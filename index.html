@@ -28,13 +28,17 @@
                     <input type="submit" name="next" value=">">
                 </div>
                 <div class="search-group">
-                    <input type="search" name="search" class="text-area search" placeholder="Пошук: Завантаження">
-                    <img src="1491814706magnifying-glass.png" class="right-image glass">
+                    <input type="search" name="search" class="text-area search-form" placeholder="Пошук: Завантаження">
+                    <img src="1491814706magnifying-glass.png" class="img glass">
                 </div>
                 <div class="filepath-group">
-                    <input type="text" name="filepath" class="text-area filepath">
-                    <img src="ікон.png" class="folder-img">
-                    <img src="if_download_1814077.png" class="right-image refresh-img">
+                    <input type="text" name="filepath" class="text-area filepath-form">
+                    <img src="img/downloads-small.png" class="img folder-img">
+                    <div class="more-container">⇓
+                    </div>
+                    <div class="refresh-container">
+                        <img src="img/refresh.png" class="img refresh-img">
+                    </div>
                 </div>
             </div>
 
@@ -63,6 +67,12 @@
                         </li>
                         <li>Створити папку</li>
                     </ul>
+
+                    <ul class="extra-options">
+                        <li class="view-option"><div><img src="img/table.png"><img class="more-in" src="img/more.png"></div></li>
+                        <li><img src="img/preview.png"></li>
+                        <li><img src="img/help.png"></li>
+                    </ul>
             </div>
         </header>
 
@@ -71,25 +81,25 @@
                 <ul class="menu">
                     <li>
                         <div>
-                            <img src="star-128.png">
+                            <img src="img\favorite.png">
                             <span>Уподобання</span>
                         </div>
                         <ul class="sub-menu">
                             <li class="active">
                                 <div>
-                                    <img src="ікон.png">
+                                    <img src="img\downloads-small.png">
                                     <span>Завантаження</span>
                                 </div>
                             </li>
                             <li>
                                 <div>
-                                    <img src="wrist_watch.png">
+                                    <img src="img\recently.png">
                                     <span>Недавно відвідане</span>
                                 </div>
                             </li>
                             <li>
                                 <div>
-                                    <img src="">
+                                    <img src="img\desktop.png">
                                     <span>Робочий стіл</span>
                                 </div>
                             </li>
@@ -98,31 +108,31 @@
 
                     <li>
                         <div>
-                            <img src="">
+                            <img src="img\libs.png">
                             <span>Бібліотеки</span>
                         </div>
                         <ul class="sub-menu">
                             <li>
                                 <div>
-                                    <img src="">
+                                    <img src="img\video.png">
                                     <span>Відеозаписи</span>
                                 </div>
                             </li>
                             <li>
                                 <div>
-                                    <img src="">
+                                    <img src="img\docs.png">
                                     <span>Документи</span>
                                 </div>
                             </li>
                             <li>
                                 <div>
-                                    <img src="">
+                                    <img src="img\images.png">
                                     <span>Зображення</span>
                                 </div>
                             </li>
                             <li>
                                 <div>
-                                    <img src="">
+                                    <img src="img\music.png">
                                     <span>Музика</span>
                                 </div>
                             </li>
@@ -130,18 +140,18 @@
                     </li>
                     <li>
                         <div>
-                            <img src="">
+                            <img src="img\pc.png">
                             <span>Комп'ютер</span>
                         </div>
                         <ul class="sub-menu">
                             <li><div>
-                                    <img src="">
+                                    <img src="img\system-local-disc.png">
                                     <span>Локальний диск (C:)</span>
                                 </div>
                             </li>
                             <li>
                                 <div>
-                                    <img src="">
+                                    <img src="img\other-local-disc.png">
                                     <span>Локальний диск (D:)</span>
                                 </div>
                             </li>
@@ -149,12 +159,103 @@
                     </li>
                     <li>
                         <div>
-                            <img src="">
+                            <img src="img\network.png">
                             <span>Мережа</span>
                         </div>
                     </li>
                 </ul>
             </div>
+
+            <div class="main-content">
+                <table>
+                    <tr>
+                        <th>Ім'я</th>
+                        <th>Дата змінення</th>
+                        <th>Тип</th>
+                        <th>Розмір</th>
+                     </tr>
+                    
+                    <tr>
+                        <td> <img src="img\downloads-small.png">The Simpsons Hit and Run</td>
+                        <td>18.10.2017 12:14</td>
+                        <td>Папка файлів</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td> <img src="img\libs.png">888234242342-506895</td>
+                        <td>05.10.2017 12:05</td>
+                        <td>WinRAR ZIP archive</td>
+                        <td>19 101 КБ</td>
+                    </tr>
+                     <tr>
+                        <td> <img src="img\music.png">88858607842-561389</td>
+                        <td>05.10.2017 12:04</td>
+                        <td>WinRAR ZIP archive</td>
+                        <td>15 277 КБ</td>
+                    </tr>
+                    <tr>
+                        <td> <img src="img\favorite.png">Lorem ipsum dolor</td>
+                        <td>05.10.2017 12:04</td>
+                        <td>WinRAR ZIP archive</td>
+                        <td>15 277 КБ</td>
+                    </tr>
+                    <tr>
+                        <td> <img src="img\home-group.png">Lorem ipsum dolor</td>
+                        <td>05.10.2017 12:04</td>
+                        <td>WinRAR ZIP archive</td>
+                        <td>15 277 КБ</td>
+                    </tr>
+                    <tr>
+                        <td> <img src="img\images.png">88858607842-561389</td>
+                        <td>05.10.2017 12:04</td>
+                        <td>WinRAR ZIP archive</td>
+                        <td>15 277 КБ</td>
+                    </tr>
+                    <tr>
+                        <td> <img src="img\video.png">88858607842-561389</td>
+                        <td>05.10.2017 12:04</td>
+                        <td>WinRAR ZIP archive</td>
+                        <td>15 277 КБ</td>
+                    </tr>
+                    <tr>
+                        <td> <img src="img\preview.png">Lorem ipsum dolor</td>
+                        <td>05.10.2017 12:04</td>
+                        <td>WinRAR ZIP archive</td>
+                        <td>15 277 КБ</td>
+                    </tr>
+                    <tr>
+                        <td> <img src="img\help.png">Lorem ipsum dolor</td>
+                        <td>05.10.2017 12:04</td>
+                        <td>WinRAR ZIP archive</td>
+                        <td>15 277 КБ</td>
+                    </tr>
+                    <tr>
+                        <td> <img src="img\cd-dvd.png">88858607842-561389</td>
+                        <td>05.10.2017 12:04</td>
+                        <td>WinRAR ZIP archive</td>
+                        <td>15 277 КБ</td>
+                    </tr>
+                    <tr>
+                        <td> <img src="img\docs.png">Lorem ipsum dolor</td>
+                        <td>05.10.2017 12:04</td>
+                        <td>WinRAR ZIP archive</td>
+                        <td>15 277 КБ</td>
+                    </tr>
+                    <tr>
+                        <td> <img src="img\music.png">88858607842-561389</td>
+                        <td>05.10.2017 12:04</td>
+                        <td>WinRAR ZIP archive</td>
+                        <td>15 277 КБ</td>
+                    </tr>
+                    <tr>
+                        <td> <img src="img\network.png">Lorem ipsum dolor</td>
+                        <td>05.10.2017 12:04</td>
+                        <td>WinRAR ZIP archive</td>
+                        <td>15 277 КБ</td>
+                    </tr>
+                </table>
+            </div>
+
         </main>
         <footer>
 

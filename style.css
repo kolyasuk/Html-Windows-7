@@ -59,9 +59,14 @@ input[type=search]{
     background:#fff; 
     display:inline-block; 
     box-sizing: border-box;
-    background:rgba(232, 242, 252, 0.6);
+    background:#F0F8FF;
     height: 23px;
     margin: 0;
+}
+
+input[type=text]:hover,
+input[type=search]:hover{
+    background:white;
 }
 
 .filepath-group{
@@ -78,15 +83,40 @@ input[type=search]{
     left: 3px;
 }
 
-.right-image{
-     position: absolute;
-     top: 2px; 
-     right: 2px;
-     width: 20px;
+.filepath-group .refresh-container{
+    position: absolute;
+    border-left: 1px solid black;
+    right: 0px;
+    top: 0px;
+    width:24px;
+    height: 100%;
+    cursor: default;
 }
 
-.filepath-group .refresh-img{
-    border-left: 1px solid black; 
+.filepath-group .more-container{
+    position: absolute;
+    text-align: center;
+    right: 24px;
+    top: 0px;
+    width:17px;
+    height: 100%; 
+}
+
+.filepath-group .more-container:hover{
+    border-left: 1px solid rgb(25,25,112);
+    background: rgba(30,144,255,0.3);
+}
+
+.filepath-group .refresh-container:hover{
+    background: rgba(30,144,255,0.3);
+
+}
+
+.header-middle .img{
+    position: absolute;
+    width: 16px;
+    right: 4px;
+    top:4px;
 }
 
 .search-group{
@@ -96,12 +126,12 @@ input[type=search]{
     width: 15%;
 }
 
-.filepath{
-    padding: 0px 20px;
+.filepath-form{
+    padding: 0px 40px 0px 20px;
     width: 100%;
 }
 
-.search{
+.search-form{
     width: 100%;
     padding-right:17px 
 }
@@ -119,11 +149,14 @@ input[type=search]{
 
 .header-bottom{
     background: rgba(176,224,230, 0.5);
-    padding: 5px 0px;
+    padding: 1px 0px;
     border-bottom: 2px solid lightgray;
+    padding-bottom:6px; 
+    font-weight: 500;
 }
 
 .menu-option{
+    display: inline-block;
     list-style: none;
     margin: 0;
 }
@@ -133,8 +166,9 @@ input[type=search]{
     position: relative;
     margin-right:20px; 
     font-size: 12;
-    padding: 3px 15px;
+    padding: 2px 15px;
     color: rgb(25,25,112);
+    cursor: pointer;
 }
 
 .menu-option > li:hover{
@@ -169,7 +203,40 @@ input[type=search]{
     border-radius: 3px;
 }
 
+.extra-options{
+    display: inline-block;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    margin-right:5px; 
+    vertical-align: middle;
+}
+
+.extra-options li{
+    display: inline-block; 
+    list-style: none;
+}
+
+.extra-options  li img{
+    padding:5px;
+}
+
+.extra-options li img:hover{
+    border: 1px solid rgb(176,224,230);
+    border-radius: 3px;
+    margin: -1px;
+    background: rgb(240,248,255);
+}
+
+.extra-options li div:hover img{
+    border: 1px solid rgb(176,224,230);
+    border-radius: 3px;
+    margin: -1px;
+    background: rgb(240,248,255);
+}
+
 .left-nav-bar{
+    font-weight: 500;
     float: left;
     width: 190px;
     height: 100%;
@@ -182,7 +249,6 @@ input[type=search]{
 
 .left-nav-bar img{
     position: absolute;
-    width: 18px;
     vertical-align: middle;
 }
 
@@ -192,14 +258,14 @@ input[type=search]{
 
 .left-nav-bar .active{
     border: 1px solid rgb(30,144,255);
-    background: rgba(30,144,255,0.5);
+    background: rgba(30,144,255,0.3);
     margin: 1px;
     border-radius: 3px;
 }
 
 .left-nav-bar .menu  .active:hover{
     border: 1px solid rgb(30,144,255);
-    background: rgba(30,144,255,0.5);
+    background: rgba(30,144,255,0.3);
     margin: 1px;
     border-radius: 3px;
 }
@@ -216,16 +282,20 @@ input[type=search]{
 
 .left-nav-bar .menu li li{
     padding-left: 20px;
+    cursor: pointer;
 }
 
 .left-nav-bar .menu > li > div:hover{
     border: 1px solid rgb(176,224,230);
+    background: rgb(240,248,255);
     margin: -1px;
     border-radius: 3px;
+    cursor: pointer;
 }
 
 .left-nav-bar .menu li li:hover{
     border: 1px solid rgb(176,224,230);
+    background: rgb(240,248,255);
     margin: -1px;
     border-radius: 3px;
 }
@@ -237,6 +307,56 @@ input[type=search]{
 
 .left-nav-bar .menu .sub-menu:last-of-type{
     margin-bottom: 20px;
+}
+
+.main-content{
+    float: left;
+    margin-left: 15px;
+}
+
+.main-content table{
+    font-weight: 500;
+    font-size: 12;
+    color:  #C0C0C0;
+}
+
+.main-content table th{
+    border-right: 1px solid rgb(176,224,230);
+    color: rgb(25,25,112);
+    font-weight: 500;
+    padding-left:5px;
+}
+
+.main-content table td:first-of-type{ 
+    color: black;
+}
+
+.main-content table tr:nth-child(2) td{
+    margin-top:10px; 
+}
+
+.main-content table:first-of-type~tr{
+    display: block;
+    margin: 4px;
+}
+
+.main-content table td{
+    padding-right: 20px; 
+    padding-left:5px;
+}
+
+.main-content table img{
+    width: 16px;
+    vertical-align: top;
+    margin-right:5px; 
+}
+
+.main-content table tr:first-child ~ tr:hover{
+    border: 1px solid rgb(176,224,230);
+    background: rgb(240,248,255);
+    border-radius: 3px;
+    margin: -1px;
+    cursor: default;
 }
 
 
