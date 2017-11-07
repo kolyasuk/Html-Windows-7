@@ -51,6 +51,35 @@
     background: rgba(30,144,255,0.5);
 }
 
+.paginator{
+    display: inline-block;
+}
+
+.paginator input{
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    height: 25px;
+    line-height: 10px;
+    vertical-align: top;
+    background-color: #1E90FF;
+    border:1px solid black;
+    vertical-align: middle;
+    margin-bottom:5px; 
+}
+
+.paginator input:hover{
+    background-color:rgba(30, 144, 255,0.5);
+}
+
+.header-middle > img{
+    width: 14px;
+}
+
+input[type=search]::-webkit-input-placeholder{
+    font-size: 14px;
+    font-style: italic;
+}
 
 input[type=text],
 input[type=search]{
@@ -138,17 +167,6 @@ input[type=search]:hover{
 .search-form{
     width: 100%;
     padding-right:17px 
-}
-
-.paginator{
-    display: inline-block;
-}
-
-.paginator input{
-    color: white;
-    font-weight: bold;
-    border-radius: 100%;
-    background-color: lightblue;
 }
 
 .header-bottom{
@@ -359,7 +377,6 @@ input[type=search]:hover{
     border: 1px solid rgb(176,224,230);
     background: rgb(240,248,255);
     border-radius: 3px;
-    margin: -1px;
     cursor: default;
 }
 
@@ -387,41 +404,122 @@ input[type=search]:hover{
     background: #2069F0;
     width: 100%;
     height: 40px;
+    line-height: 40px;
+    cursor: default;
 }
 
-.footer img:first-of-type{
+.footer .applications img:first-of-type{
     float: left;
     width: 40px;
     margin-right: 15px; 
 }
 
-.footer img:first-of-type ~img{
+.footer .applications img:first-of-type ~img{
     padding: 5px 10px;
     float: left;
     width: 50px;
-    padding: -2px;
     margin-right: 3px;
 }
 
-.footer img:first-of-type ~img:not(.active):hover{
+.footer .applications img:first-of-type ~img:not(.active):hover{
     border-left: 1px solid rgba(0,0,0,0.1);
-    border-right: 1px solid rgba(0,0,0,0.1);
-
+    border-right: 1px solid rgba(0,0,0,0.1); 
+    margin-right: 2px;
 }
 
-.footer .active{
+.footer .applications .active{
     border: 1px solid rgb(176,224,230);
     background: rgba(240,248,255,0.2);
     border-radius: 3px;
 }
 
-.footer .active:hover{
+.footer .applications .active:hover{
     background: rgba(240,248,255,0.1);
 }
 
-.footer .windows-icon{
+.footer .applications .windows-icon{
     margin-left: 10px; 
 }
+
+.footer .notification-area{
+    float: right;
+    color: white;
+    font-size: 12px;
+}
+
+
+.footer .notification-area .close-all-btn{
+    width: 15px;
+    height: 100%;
+    background: #1954c1;
+    border-left:1px solid rgba(0,0,0,0.1);
+    border-right:1px solid rgba(0,0,0,0.1);
+}
+
+.footer .notification-area .close-all-btn:hover{
+    background: #3170e2;
+}
+
+.footer .notification-area .more-options ~  img{
+    padding: 10px 3px;
+    vertical-align: middle;
+}
+
+.footer .notification-area .more-options ~ img:hover{
+    border-right: 1px solid rgba(0,0,0,0.1);
+    border-left: 1px solid rgba(0,0,0,0.1);
+    margin: -1px;
+}
+
+.footer .notification-area .date-time:hover{
+    border-right: 1px solid rgba(0,0,0,0.1);
+    border-left: 1px solid rgba(0,0,0,0.1);
+    margin-left:4px;
+    margin-right:-1px;
+}
+
+.footer .notification-area > span,
+.footer .notification-area img:first-of-type{
+    text-transform: uppercase;
+    padding: 2px 1px;
+    margin-right: 2px;
+    margin-left: 2px; 
+}
+
+.footer .notification-area > span:hover,
+.footer .notification-area img:first-of-type:hover{
+    border:1px solid rgba(0,0,0,0.3);
+    border-radius: 2px;
+    margin-right: 1px; 
+    margin-left: 1px;
+    background: rgba(30,144,255,0.7);
+}
+
+.footer .notification-area .more-options{
+    width: 20px;
+    padding: 5px;
+}
+
+.footer .notification-area .more-options:hover{
+    border:1px solid rgba(0,0,0,0.3);
+    border-radius: 2px;
+    padding: 4px;
+}
+
+.footer .notification-area .date-time{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left:5px; 
+    text-align: center;
+    vertical-align: top;
+    line-height: 20px;
+}
+
+.footer .notification-area div{
+    display: inline-block;
+    float: right;
+}
+
 
 .clear-fix{
     content: "";
