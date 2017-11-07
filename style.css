@@ -95,11 +95,15 @@ input[type=search]:hover{
 
 .filepath-group .more-container{
     position: absolute;
-    text-align: center;
     right: 24px;
-    top: 0px;
+    top: 0;
     width:17px;
     height: 100%; 
+}
+
+.filepath-group .more-container img{
+    position: absolute;
+    top:5px;
 }
 
 .filepath-group .more-container:hover{
